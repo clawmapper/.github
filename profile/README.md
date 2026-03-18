@@ -1,35 +1,27 @@
 # Clawmapper
 
-**AI-agent-managed product roadmaps. No app. No database. Just markdown, git, and Claude.**
+**No code. No database. Just roadmap.**
 
-Clawmapper is an open-source system for managing product roadmaps through conversation with an AI agent. You tell it what you're building, what shipped, what changed — it structures everything, maintains consistency, and commits it to your repo. Your team reads the roadmap on GitHub. Stakeholders get generated outputs (slides, summaries, reports) on demand.
+Every roadmap tool took your data, wrapped it in proprietary software, and charged you rent to see it. Per seat. Per month. Forever.
 
----
+Clawmapper is a GitHub template. Your roadmap lives as plain Markdown in the same repo as your code. Claude Code is the assistant — you describe what's shipping, what changed, what needs a slide. It handles the structure and commits everything. Git keeps the history.
 
-### How it works
-
-1. **Clone the template** — `clawmapper/clawmapper` is the starting point
-2. **Open it with Claude** — the `CLAUDE.md` tells the agent everything it needs to know
-3. **Talk to it** — describe your roadmap in plain language; the agent writes and commits the markdown
-4. **Share outputs** — ask for a board slide, a sprint summary, a stakeholder update; the agent generates and commits it
-
----
-
-### Principles
-
-- **No schema.** Markdown is flexible. Structure evolves with your team, not against it.
-- **Git is the audit trail.** Every change is a commit. History is free.
-- **The agent owns the roadmap.** Users don't edit files directly — consistency is the agent's job.
-- **Outputs on demand.** HTML, PDF, slides — generated from the roadmap and committed back.
+No app. No database. No per-seat license.
 
 ---
 
 ### Get started
 
 ```bash
-gh repo clone clawmapper/clawmapper my-roadmap
+gh repo create my-roadmap --template clawmapper/clawmapper
 cd my-roadmap
 # Open in Claude Code and start talking
 ```
 
-→ [clawmapper/clawmapper](https://github.com/clawmapper/clawmapper)
+→ **[clawmapper/clawmapper](https://github.com/clawmapper/clawmapper)** — the template
+
+→ **[clawmapper.ai](https://clawmapper.ai)** — the full story
+
+---
+
+*Most people are focused on the agent that replaces the engineer. We're more interested in the one that makes the PM/engineer split irrelevant — and hands the whole cycle back to builders.*
